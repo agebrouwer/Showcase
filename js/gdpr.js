@@ -1,7 +1,6 @@
 class GDPR {
 
     constructor() {
-        debugger;
         this.showStatus();
         this.showContent();
         this.bindEvents();
@@ -55,15 +54,10 @@ class GDPR {
 
         if (status) localStorage.setItem('gdpr-consent-choice', status);
         const date = new Date();
-        let Month = date.getMonth() + 1;
-        let Day = date.getDate();
-        let Year = date.getFullYear();
-        let Hour = date.getHours();
-        let Minute = date.getMinutes();
-        let DateToday = `${Day}/${Month}/${Year}`;
-        let TimeNow = `${Hour}:${Minute}`; 
-        localStorage.setItem('Date', DateToday.toString());
-        localStorage.setItem('Time', TimeNow.toString());
+        let DateToday = date.toLocaleDateString();
+        let TimeNow = date.toLocaleTimeString(); 
+        localStorage.setItem('Date', DateToday);
+        localStorage.setItem('Time', TimeNow);
         return localStorage.getItem('gdpr-consent-choice');
     }
 
