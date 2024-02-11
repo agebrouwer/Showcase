@@ -1,107 +1,83 @@
-/*mobile version*/
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter-Regular", sans-serif;
+  } 
 
-.page {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial;
+  .header,
+.header * {
+  box-sizing: border-box;
 }
-
-.personalia {
-    background: linear-gradient(#1C7FC6, #65B1DB);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.header {
+  display: flex;
+  width: 100vw;
 }
-
-.profile {
-    width: 100%;
+.user {
+  width: 33.3%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
-
-.person-logo {
-    margin: 15px 0px 15px 0px;
-    width: 20%;
-    animation: glow 3s ease alternate;
+.profile-pic {
+  padding: 0, 10%;
+  border-radius: 500px;
+  flex-shrink: 0;
+  width: 90%;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
 }
-
-.profile-content {
-    padding: 15px;
-    font-size: 20px;
+.profile-pic-text {
+  color: #1f458e;
+  font-style: bold;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
 }
-
-.profile-content__category-title {
-    color: rgba(27, 127, 198, 0.96);
+.blue-and-white-strokes-header {
+  width: 33.3%;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
 }
-
-.profile-content__category--hidden-mobile {
-    display: none;
+.blue-and-white-strokes-footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 60vw;
 }
-
-.profile-content__element {
-    display: flex;
-    flex-direction: column;
+.personia {
+  margin: 2%;
 }
-
-.profile-content__element--hidden-mobile {
-    display: flex;
-    flex-direction: column;
-    display: none;
-}
-
-.profile-content__title {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 2px;
-    margin-top: 6px;
-}
-
-.profile-content__period {
-    display: none;
-}
-
-.profile-content__institute {
-    color: rgba(27, 127, 198, 0.96);
-    margin-top: 0px;
-    font-size: 14px;
-}
-
-@media only screen and (min-width: 800px) {
-
-    .page {
-        flex-direction: row;
-    }
-
-    .person-name{
-        order: -1;
-    }
-
-    .profile-content__category--hidden-mobile{
-        display: flex;
-        flex-direction: column;
-    }
-
-    /*fix: anders als stipje zichtbaar*/
-    .profile-content__category--hidden-mobile hr{
-        width: 100%;
-    }
-
-    .profile-content__element--hidden-mobile {
-        display: flex;
-    }
-
-    .profile-content__element-header{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .profile-content__period {
-        font-size: 12px;
-        color: #5c6166;
-        display: flex;
-    }
+.personia-title {
+  color: #1f458e;
+  text-align: left;
+  font-size: 20px;
 
 }
-
-
-/*student uitwerking*/
-
+.personia-line {
+  border-style: solid;
+  border-color: #1f458e;
+  border-width: 3px 0 0 0;
+}
+.personia-attribute {
+  width: 33.3%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+}
+.personia-attribute-text {
+  color: #000000;
+  text-align: start;
+  margin: 0% 10%;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+}
