@@ -6,60 +6,63 @@
     <title>ShowCase</title>
     <script src="https://kit.fontawesome.com/4a2d83c273.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stylesheets/style.css">
-    <script defer src="js/gdpr.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
 <body>
-    <header class="header">
-        <img class="blue-and-white-strokes-header" src="images/blue-and-white-strokes-header.png" />
-        <div class="user">
-            <img class="profile-pic" src="images/profile-pic.png" />
-            <div class="profile-pic-text">Age Brouwer</div>
-        </div>
-        <div></div>
-    </header>
-    <main>
-        <section class="section-main">
-            <div class="personia">
-                <div class="personia-title">Personia</div>
-                <div class="personia-line"></div>
-                <div class="personia-attribute">
-                    <span style="color: #1f458e;">
-                        <i class="fa-solid fa-user"></i>
-                    </span>
-                    <div class="personia-attribute-text">Age Brouwer</div>
-                </div>
-                <div class="personia-attribute">
-                    <span style="color: #1f458e;">
-                        <i class="fa-solid fa-envelope"></i>
-                    </span>
-                    <div class="personia-attribute-text">agebrouwer@gmail.com</div>
-                </div>
-                <div class="personia-attribute">
-                    <span style="color: #1f458e;">
-                        <i class="fa-solid fa-phone"></i>
-                    </span>
-                    <div class="personia-attribute-text">06 15447710</div>
-                </div>
-                <div class="personia-attribute">
-                    <span style="color: #1f458e;">
-                        <i class="fa-solid fa-address-book"></i>
-                    </span>
-                    <div class="personia-attribute-text">Wijk 1 42, 8321EL Urk</div>
-                </div>
-                <div class="personia-attribute">
-                    <span style="color: #1f458e;">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </span>
-                    <div class="personia-attribute-text">11 Juli 2001</div>
-                </div>
-            </div>
+
+    <div class="page">
+        <section class="personalia">
+
+            <a href="profile_page.html" class="person-click">
+                <img  src="images/profile-pic.png" class="person-logo">
+            </a>
+            <h1 class="person-name">Age Brouwer</h1>
+
         </section>
-    </main>
-    <footer class="footer">
-        <img class="blue-and-white-strokes-footer" src="images/blue-and-white-strokes-footer.png" />
-    </footer>
+
+        <section class="profile">
+
+            <section class="profile-content">
+
+                <div class="profile-content__category--hidden-mobile">
+                    <h3 class="profile-content__category-title">Profiel</h3>
+                    <hr>
+                </div>
+
+                <div class="profile-content__element--hidden-mobile">
+                    <div class="profile-content__element-header">
+                    </div>
+                    <p class="profile-content__description">
+                        Als web developer wil ik graag efficiente apps maken die visueel profesionaliteit uit stralen.
+                    <p>
+                </div>
+
+
+                <div class="profile-content__category">
+                    <h3 class="profile-content__category-title">Opleidingen</h3>
+                    <hr>
+                </div>
+
+                <div class="profile-content__element-column">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title">Student</h4>
+                        <p class="profile-content__period">sep 2021 - feb 2024</p>
+                    </div>
+                    <p class="profile-content__institute">Hogeschool Windesheim, Zwoll</p>
+                </div>
+
+                <div class="profile-content__element-column">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title">Scholier</h4>
+                        <p class="profile-content__period">jan 2016 - feb 2021</p>
+                    </div>
+                    <p class="profile-content__institute">Emelwerda college, Emmeloord</p>
+                </div>
+            </section>
+
+        </section>
+    </div>
 
 </body>
 
